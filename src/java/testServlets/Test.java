@@ -24,7 +24,8 @@ public class Test {
         
         testColor();   
         testAge();   
-
+        testPIN();
+        testSNILS();
     }
 
     private static void testColor() {
@@ -45,5 +46,13 @@ public class Test {
         
         System.out.print(servletName+ " - ");
         servlet.print();
+    }
+
+    private static void testPIN() {
+        print("GetPIN");
+    }
+
+    private static void testSNILS() {
+        print("GetSNILS");
     }
 }
