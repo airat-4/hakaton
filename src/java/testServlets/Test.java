@@ -28,6 +28,7 @@ public class Test {
 
     private static void testColor() {
         TestServlet servlet = new TestServlet("GetColor");
+        System.out.print("GetColor - ");
         servlet.print();
     }
 }
