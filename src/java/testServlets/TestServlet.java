@@ -31,21 +31,35 @@ public class TestServlet {
     public TestServlet(String servletName) {
         this.servletName = servletName;
     }
-    
-    public void addParametr(String name, String value){
+
+    public void addParametr(String name, String value) {
         parametr.put(name, value);
+    }
+
+    private String getParametr() {
+        String param = "";
+        boolean first = true;
+        for (String key : parametr.keySet()) {
+            if(first){
+                param += "?";
+            }else{
+                param += "&";
+            }
+            first = false;
+            param += key + "=" + parametr.get(key);
+        }
+        return param;
     }
 
     public void print() {
         try {
-            URL obj = new URL(domen + ":" + port + "/" + name + "/" + servletName);
+            URL obj = new URL(domen + ":" + port + "/" + name + "/" + servletName + getParametr());
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             con.setRequestMethod("GET");
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
-            for (String key : parametr.keySet()) {
-                con.setRequestProperty(key,parametr.get(key));
-            }
+
+            
             System.out.println(in.readLine());
         } catch (MalformedURLException ex) {
             Logger.getLogger(TestServlet.class.getName()).log(Level.SEVERE, null, ex);

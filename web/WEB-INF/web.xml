@@ -4,9 +4,17 @@
         <servlet-name>GetColor</servlet-name>
         <servlet-class>servlets.GetColor</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetAge</servlet-name>
+        <servlet-class>servlets.GetAge</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetColor</servlet-name>
         <url-pattern>/GetColor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAge</servlet-name>
+        <url-pattern>/GetAge</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

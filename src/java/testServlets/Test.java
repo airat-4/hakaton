@@ -21,14 +21,29 @@ public class Test {
     
     
     public static void main(String[] args) throws MalformedURLException, IOException {
-        testColor();
-                
+        
+        testColor();   
+        testAge();   
 
     }
 
     private static void testColor() {
-        TestServlet servlet = new TestServlet("GetColor");
-        System.out.print("GetColor - ");
+        print("GetColor");
+    }
+
+    private static void print(String servletName) {
+        TestServlet servlet = new TestServlet(servletName);
+        System.out.print(servletName+ " - ");
+        servlet.print();
+    }
+
+    private static void testAge() {
+        String servletName = "GetAge";
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("begin", "5");
+        servlet.addParametr("end", "10");
+        
+        System.out.print(servletName+ " - ");
         servlet.print();
     }
 }
