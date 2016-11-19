@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import logic.Patronymic;
 
 /**
  *
@@ -32,11 +33,20 @@ public class Test {
         testPIN();
         testSNILS();
         testAcc();
+        testLanguage();
+        testLastName();
+        testName();
+        testPatronymic();
+        testFIO();
+        
         testBankName();
         testMaritalStatus();
         testRelationDegree();
         testCity();
         testStreetType();
+        testINN("юр");
+        testINN("физ");
+        testRegion();
     }
 
     private static void testColor() {
@@ -45,7 +55,6 @@ public class Test {
 
     private static void print(String servletName) {
         TestServlet servlet = new TestServlet(servletName);
-        System.out.print(servletName+ " - ");
         servlet.print();
     }
 
@@ -54,8 +63,6 @@ public class Test {
         TestServlet servlet = new TestServlet(servletName);
         servlet.addParametr("begin", "5");
         servlet.addParametr("end", "10");
-        
-        System.out.print(servletName+ " - ");
         servlet.print();
     }
 
@@ -67,7 +74,6 @@ public class Test {
         String servletName = "GetIp";
         TestServlet servlet = new TestServlet(servletName);
         servlet.addParametr("protocolVersion", protocol);
-        System.out.print(servletName+  " Ip"+ protocol+" - ");
         servlet.print();
     }
 
@@ -86,7 +92,43 @@ public class Test {
     private static void testAcc() {
         print("GetAccount");
     }
+    
+    private static void testLanguage() {
+        print("GetLanguage");
+    }
 
+    private static void testLastName() {
+        String servletName = "GetLastName";
+        testFIO(servletName);
+    }
+
+    private static void testName() {
+        String servletName = "GetName";
+        testFIO(servletName);
+    }
+
+    private static void testPatronymic() {
+        String servletName = "GetPatronymic";
+        testFIO(servletName);
+    }
+
+    private static void testFIO() {
+        String servletName = "GetFIO";
+        testFIO(servletName);
+    }
+
+    private static void testFIO(String servletName) {
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("language", "ru");
+        servlet.addParametr("sex", "male");
+        servlet.print();
+        
+        servlet = new TestServlet(servletName);
+        servlet.addParametr("language", "en");
+        servlet.addParametr("sex", "famale");
+        servlet.print();
+    }
+    
     private static void testBankName() {
         print("GetBankName");
     }
@@ -105,5 +147,16 @@ public class Test {
 
     private static void testStreetType() {
         print("GetStreetType");
+    }
+
+    private static void testINN(String type) {
+        String servletName = "GetINN";
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("type", type);
+        servlet.print();
+    }
+
+    private static void testRegion() {
+       print("GetRegion");
     }
 }

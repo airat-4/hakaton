@@ -1,0 +1,25 @@
+GetColor - #eff887
+GetAge?end=10&begin=5 - 7
+GetZvanie - Капитан
+GetIp?protocolVersion=v4 - 10.201.34.158
+GetIp?protocolVersion=v6 - 1b6a:e3dd:70d7:ddba:fe69:0bec:572b:69c5
+GetTime - 21:18
+GetPIN - 1223
+GetSNILS - 645-184-777 23
+GetAccount - 40867216325899923839
+GetLanguage - Японский
+GetLastName?sex=male&language=ru - Гареев
+GetLastName?sex=famale&language=en - Nosova
+GetName?sex=male&language=ru - Паша
+GetName?sex=famale&language=en - Aleksandra
+GetPatronymic?sex=male&language=ru - Гарунович
+GetPatronymic?sex=famale&language=en - Aleksandrovna
+GetFIO?sex=male&language=ru - Алиев Александр Айратович
+GetFIO?sex=famale&language=en - Alieva Ksenija Ayratovna
+GetBankName - Югра
+GetMaritalStatus - Не замужем
+GetRelationDegree - Внук
+GetCity - Нижний Новгород
+GetStreetType - Проспект
+GetINN?type=юр - 0762596124
+GetINN?type=физ - 257199204893

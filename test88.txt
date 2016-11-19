@@ -1,0 +1,15 @@
+GetColor - #9b45eb
+GetAge?end=10&begin=5 - 7
+GetZvanie - Старший лейтенант
+GetIp?protocolVersion=v4 - 196.107.83.164
+GetIp?protocolVersion=v6 - de6f:ee1f:dcbd:1ba3:f0b8:2b82:dd51:30d5
+GetTime - 19:39
+GetPIN - 2426
+GetSNILS - 213-502-502 111101
+GetLanguage - Английский
+GetLastName?sex=male&language=ru - Ефремов
+GetLastName?sex=famale&language=en - Itrukhina
+GetName?sex=male&language=ru - Гарун
+GetName?sex=famale&language=en - Olja
+GetPatronymic?sex=male&language=ru - Гарунович
+GetPatronymic?sex=famale&language=en - Aleksandrvna
