@@ -17,7 +17,7 @@ public class Name {
         "Кирилл",
         "Айрат",
         "Гарун",
-        "Паша",
+        "Павел",
         "Александр"
     };
     private String[] famaleName = {

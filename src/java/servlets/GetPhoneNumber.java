@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,14 +11,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import logic.Name;
-import logic.Patronymic;
+import logic.PhoneNumber;
 
 /**
  *
  * @author airat
  */
-public class GetPatronymic extends HttpServlet {
+public class GetPhoneNumber extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,11 +31,11 @@ public class GetPatronymic extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String language = request.getParameter("language");
-        String sex = request.getParameter("sex");
         try (PrintWriter out = response.getWriter()) {
-            Patronymic name = new Patronymic();
-            out.print(name.get("ru".equals(language), "male".equals(sex)));
+            String countryNuber = request.getParameter("countryNuber");
+            String operatorNumber = request.getParameter("operatorNumber");
+            PhoneNumber phoneNumber = new PhoneNumber();
+            out.print(phoneNumber.getPhoneNumber(countryNuber, operatorNumber));
         }
     }
 
