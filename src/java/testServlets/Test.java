@@ -29,6 +29,8 @@ public class Test {
         testIp("v6");   
         testTime();   
 
+        testPIN();
+        testSNILS();
     }
 
     private static void testColor() {
@@ -65,5 +67,13 @@ public class Test {
 
     private static void testTime() {
         print("GetTime");
+    }
+    
+    private static void testPIN() {
+        print("GetPIN");
+    }
+
+    private static void testSNILS() {
+        print("GetSNILS");
     }
 }

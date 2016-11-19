@@ -9,6 +9,14 @@
         <servlet-class>servlets.GetAge</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>GetPIN</servlet-name>
+        <servlet-class>servlets.GetPIN</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getSNILS</servlet-name>
+        <servlet-class>servlets.GetSNILS</servlet-class>
+       </servlet>
+       <servlet>
         <servlet-name>GetZvanie</servlet-name>
         <servlet-class>servlets.GetZvanie</servlet-class>
     </servlet>
@@ -47,6 +55,14 @@
     <servlet-mapping>
         <servlet-name>GetLanguage</servlet-name>
         <url-pattern>/GetLanguage</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>GetPIN</servlet-name>
+        <url-pattern>/GetPIN</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getSNILS</servlet-name>
+        <url-pattern>/GetSNILS</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
