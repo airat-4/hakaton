@@ -1,0 +1,11 @@
+GetColor - #02d58c
+GetAge?end=10&begin=5 - 7
+GetZvanie - Старший лейтенант
+GetIp?protocolVersion=v4 - 65.163.90.7
+GetIp?protocolVersion=v6 - ff4e:5feb:bb4a:c8a8:afe8:365a:a72f:af16
+GetTime - 20:23
+GetPIN - 0137
+GetSNILS - 124-403-135 111102
+GetLanguage - Французкий
+GetLastName?sex=male&language=ru - Итрухин
+GetLastName?sex=famale&language=en - АлиевaAlieva

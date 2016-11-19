@@ -1,0 +1,17 @@
+GetColor - #aadebf
+GetAge?end=10&begin=5 - 8
+GetZvanie - Сержант
+GetIp?protocolVersion=v4 - 146.40.223.89
+GetIp?protocolVersion=v6 - beef:cbe3:96ca:ac96:1134:9e68:67f1:d0ea
+GetTime - 08:56
+GetPIN - 5437
+GetSNILS - 568-778-463 111183
+GetLanguage - Японский
+GetLastName?sex=male&language=ru - Алиев
+GetLastName?sex=famale&language=en - Storozhenkova
+GetName?sex=male&language=ru - Александр
+GetName?sex=famale&language=en - Ramilja
+GetPatronymic?sex=male&language=ru - Айратович
+GetPatronymic?sex=famale&language=en - Kirillovna
+GetFIO?sex=male&language=ru - Ефремов Паша Айратович
+GetFIO?sex=famale&language=en - Efremova Aleksandra Garunovna

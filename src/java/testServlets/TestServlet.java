@@ -6,8 +6,11 @@
 package testServlets;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -22,11 +25,21 @@ import java.util.logging.Logger;
  */
 public class TestServlet {
 
+    private static PrintStream out;
     private String domen = "http://127.0.0.1";
     private String port = "8084";
     private String name = "Hakaton";
     private String servletName = "Hakaton";
+    private static String fileName = "test";
     private Map<String, String> parametr = new HashMap();
+
+    static {
+        try {
+            out = new PrintStream(new File(fileName + (System.currentTimeMillis() % 100) + ".txt"));
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(TestServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     public TestServlet(String servletName) {
         this.servletName = servletName;
@@ -40,9 +53,9 @@ public class TestServlet {
         String param = "";
         boolean first = true;
         for (String key : parametr.keySet()) {
-            if(first){
+            if (first) {
                 param += "?";
-            }else{
+            } else {
                 param += "&";
             }
             first = false;
@@ -59,8 +72,10 @@ public class TestServlet {
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
 
-            
-            System.out.println(in.readLine());
+            String log = servletName + getParametr() + " - "+ in.readLine();
+            System.out.println(log);
+            out.println(log);
+            out.flush();
         } catch (MalformedURLException ex) {
             Logger.getLogger(TestServlet.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
