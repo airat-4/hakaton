@@ -31,6 +31,7 @@ public class Test {
 
         testPIN();
         testSNILS();
+        testAcc();
     }
 
     private static void testColor() {
@@ -75,5 +76,9 @@ public class Test {
 
     private static void testSNILS() {
         print("GetSNILS");
+    }
+
+    private static void testAcc() {
+        print("GetAccount");
     }
 }

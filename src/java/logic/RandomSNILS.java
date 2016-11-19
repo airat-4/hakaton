@@ -29,7 +29,7 @@ public class RandomSNILS {
             yy += getRandomNumber();
             return snils+" "+yy;
         }else
-            return snils+" 1111"+getY(sum);
+            return snils+" "+getY(sum);
     }
     
     private String getY (int sum) {
