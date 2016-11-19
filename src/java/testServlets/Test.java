@@ -24,6 +24,10 @@ public class Test {
         
         testColor();   
         testAge();   
+        testZvanie();   
+        testIp("v4");   
+        testIp("v6");   
+        testTime();   
 
     }
 
@@ -45,5 +49,21 @@ public class Test {
         
         System.out.print(servletName+ " - ");
         servlet.print();
+    }
+
+    private static void testZvanie() {
+        print("GetZvanie");
+    }
+
+    private static void testIp(String protocol) {
+        String servletName = "GetIp";
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("protocolVersion", protocol);
+        System.out.print(servletName+  " Ip"+ protocol+" - ");
+        servlet.print();
+    }
+
+    private static void testTime() {
+        print("GetTime");
     }
 }

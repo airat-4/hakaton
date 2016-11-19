@@ -8,6 +8,22 @@
         <servlet-name>GetAge</servlet-name>
         <servlet-class>servlets.GetAge</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetZvanie</servlet-name>
+        <servlet-class>servlets.GetZvanie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Ip</servlet-name>
+        <servlet-class>servlets.GetIp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetTime</servlet-name>
+        <servlet-class>servlets.GetTime</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetLanguage</servlet-name>
+        <servlet-class>servlets.GetLanguage</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetColor</servlet-name>
         <url-pattern>/GetColor</url-pattern>
@@ -15,6 +31,22 @@
     <servlet-mapping>
         <servlet-name>GetAge</servlet-name>
         <url-pattern>/GetAge</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetZvanie</servlet-name>
+        <url-pattern>/GetZvanie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ip</servlet-name>
+        <url-pattern>/GetIp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetTime</servlet-name>
+        <url-pattern>/GetTime</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetLanguage</servlet-name>
+        <url-pattern>/GetLanguage</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
