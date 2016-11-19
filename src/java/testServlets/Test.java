@@ -32,6 +32,7 @@ public class Test {
 
         testPIN();
         testSNILS();
+        testAcc();
         testLanguage();
         testLastName();
         testName();
@@ -80,6 +81,10 @@ public class Test {
         print("GetSNILS");
     }
 
+    private static void testAcc() {
+        print("GetAccount");
+    }
+    
     private static void testLanguage() {
         print("GetLanguage");
     }

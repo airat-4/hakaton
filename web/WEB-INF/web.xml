@@ -48,6 +48,10 @@
         <servlet-name>GetFIO</servlet-name>
         <servlet-class>servlets.GetFIO</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetAccount</servlet-name>
+        <servlet-class>servlets.GetAccount</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetColor</servlet-name>
         <url-pattern>/GetColor</url-pattern>
@@ -95,6 +99,10 @@
     <servlet-mapping>
         <servlet-name>GetFIO</servlet-name>
         <url-pattern>/GetFIO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAccount</servlet-name>
+        <url-pattern>/GetAccount</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

@@ -1,15 +1,18 @@
-GetColor - #ee1b13
-GetAge?end=10&begin=5 - 9
-GetZvanie - Старший сержант
-GetIp?protocolVersion=v4 - 164.179.5.12
-GetIp?protocolVersion=v6 - af50:3e2b:a2de:8caf:d1f8:e13a:765b:dc41
-GetTime - 01:46
-GetPIN - 7621
-GetSNILS - 873-919-536 111169
-GetLanguage - Русский
-GetLastName?sex=male&language=ru - Стороженков
-GetLastName?sex=famale&language=en - CHekanushkina
-GetName?sex=male&language=ru - Кирилл
-GetName?sex=famale&language=en - Ramilja
-GetName?sex=male&language=ru - Кирилл
-GetName?sex=famale&language=en - Katja
+GetColor - #41f29b
+GetAge?end=10&begin=5 - 8
+GetZvanie - Маршал Российской Федерации
+GetIp?protocolVersion=v4 - 30.220.8.93
+GetIp?protocolVersion=v6 - 1b0c:1b39:8bec:c4ff:c43f:a7d4:ad36:0085
+GetTime - 10:45
+GetPIN - 4815
+GetSNILS - 998-479-094 23
+GetAccount - 40805021354287799843
+GetLanguage - Татарский
+GetLastName?sex=male&language=ru - Алиев
+GetLastName?sex=famale&language=en - Alieva
+GetName?sex=male&language=ru - Александр
+GetName?sex=famale&language=en - Aleksandra
+GetPatronymic?sex=male&language=ru - Пашаович
+GetPatronymic?sex=famale&language=en - Ayratovna
+GetFIO?sex=male&language=ru - Иванов Гарун Кириллович
+GetFIO?sex=famale&language=en - Ivanova Aleksandra Kirillovna
