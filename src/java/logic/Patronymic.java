@@ -18,8 +18,8 @@ public class Patronymic {
         "Кирилл",
         "Айрат",
         "Гарун",
-        "Паша",
-        "Александр"
+        "Александр",
+        "Владимир"
     };
     
     public String get(boolean isRus, boolean isMan){

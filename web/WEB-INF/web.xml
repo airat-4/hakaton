@@ -42,7 +42,7 @@
     </servlet>
     <servlet>
         <servlet-name>GetPatronymic</servlet-name>
-        <servlet-class>GetPatronymic</servlet-class>
+        <servlet-class>servlets.GetPatronymic</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>GetFIO</servlet-name>
@@ -51,6 +51,18 @@
     <servlet>
         <servlet-name>GetAccount</servlet-name>
         <servlet-class>servlets.GetAccount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetPhoneNumber</servlet-name>
+        <servlet-class>servlets.GetPhoneNumber</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetEmail</servlet-name>
+        <servlet-class>servlets.GetEmail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCountry</servlet-name>
+        <servlet-class>servlets.GetCountry</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GetColor</servlet-name>
@@ -103,6 +115,18 @@
     <servlet-mapping>
         <servlet-name>GetAccount</servlet-name>
         <url-pattern>/GetAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetPhoneNumber</servlet-name>
+        <url-pattern>/GetPhoneNumber</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetEmail</servlet-name>
+        <url-pattern>/GetEmail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCountry</servlet-name>
+        <url-pattern>/GetCountry</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

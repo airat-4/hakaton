@@ -1,18 +1,20 @@
-GetColor - #41f29b
-GetAge?end=10&begin=5 - 8
-GetZvanie - Маршал Российской Федерации
-GetIp?protocolVersion=v4 - 30.220.8.93
-GetIp?protocolVersion=v6 - 1b0c:1b39:8bec:c4ff:c43f:a7d4:ad36:0085
-GetTime - 10:45
-GetPIN - 4815
-GetSNILS - 998-479-094 23
-GetAccount - 40805021354287799843
-GetLanguage - Татарский
-GetLastName?sex=male&language=ru - Алиев
-GetLastName?sex=famale&language=en - Alieva
+GetColor - #df5eea
+GetAge?end=10&begin=5 - 7
+GetZvanie - Старший лейтенант
+GetIp?protocolVersion=v4 - 39.11.6.158
+GetIp?protocolVersion=v6 - cda8:a46e:d3c4:9440:2cae:1075:742d:8ada
+GetTime - 07:59
+GetPIN - 7153
+GetSNILS - 952-544-612 21
+GetAccount - 40813879780505751853
+GetLanguage - Китайский
+GetLastName?sex=male&language=ru - Ефремов
+GetLastName?sex=famale&language=en - Storozhenkova
 GetName?sex=male&language=ru - Александр
-GetName?sex=famale&language=en - Aleksandra
-GetPatronymic?sex=male&language=ru - Пашаович
-GetPatronymic?sex=famale&language=en - Ayratovna
-GetFIO?sex=male&language=ru - Иванов Гарун Кириллович
-GetFIO?sex=famale&language=en - Ivanova Aleksandra Kirillovna
+GetName?sex=famale&language=en - Ramilja
+GetPatronymic?sex=male&language=ru - Кириллович
+GetPatronymic?sex=famale&language=en - Kirillovna
+GetFIO?sex=male&language=ru - Носов Кирилл Гарунович
+GetFIO?sex=famale&language=en - Gareeva Olja Vladimirovna
+GetPhoneNumber?operatorNumber=927&countryNuber=8 - 8(927)446-15-52
+GetEmail?domen=mail.ru - @mail.ru
