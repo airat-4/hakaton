@@ -32,6 +32,11 @@ public class Test {
         testPIN();
         testSNILS();
         testAcc();
+        testBankName();
+        testMaritalStatus();
+        testRelationDegree();
+        testCity();
+        testStreetType();
     }
 
     private static void testColor() {
@@ -80,5 +85,25 @@ public class Test {
 
     private static void testAcc() {
         print("GetAccount");
+    }
+
+    private static void testBankName() {
+        print("GetBankName");
+    }
+
+    private static void testMaritalStatus() {
+        print("GetMaritalStatus");
+    }
+
+    private static void testRelationDegree() {
+        print("GetRelationDegree");
+    }
+
+    private static void testCity() {
+        print("GetCity");
+    }
+
+    private static void testStreetType() {
+        print("GetStreetType");
     }
 }
